@@ -1,7 +1,18 @@
-function multiply(a, b) {
-  return a * b;
+function makeLine(length) {
+  var line = "";
+  for (var j = 1; j <= length; j++) {
+      line += "* ";
+  }
+  return line + "\n";
 }
 
-const result = multiply(2, 4);
 
-console.log(result);
+function buildTriangle(high) {
+  let triangle = "";
+  for (var i = 1; i <= high; i++) {
+    triangle += makeLine(i)
+  }
+  return triangle
+}
+
+console.log(buildTriangle(5))
