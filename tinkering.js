@@ -1,18 +1,18 @@
-function makeLine(length) {
-  var line = "";
-  for (var j = 1; j <= length; j++) {
-      line += "* ";
-  }
-  return line + "\n";
-}
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
 
+var crew = [captain, second, pilot, companion, mercenary, mechanic];
 
-function buildTriangle(high) {
-  let triangle = "";
-  for (var i = 1; i <= high; i++) {
-    triangle += makeLine(i)
-  }
-  return triangle
-}
+var doctor = "Simon";
+var sister = "River";
+var shepherd = "Book";
 
-console.log(buildTriangle(5))
+// your code goes here
+
+crew.push(doctor, sister, stepherd);
+
+console.log(crew)
